@@ -46,7 +46,7 @@ def wsbypasstest():
         if not watched_memory_pool: time.sleep(0.1)
     process.write_int(watched_memory_pool + 0x208, 0x20)
     print(f"[info] modified memory at 0x{watched_memory_pool + 0x208:x}")
-    input("press enter to exit")
+    #input("press enter to exit")
 
 def error_box(content: str, style: int = 0):
     return user32.MessageBoxW(0, content, "Incognito", style | 0x10 | 0x1000 | 0x10000 | 0x40000 | 0x200000)
